@@ -3,9 +3,8 @@ package cn.com.fourwind.propertyManager.entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document
+//@Document
 public class PayFeeInfo {
 	@Id
 	@GeneratedValue

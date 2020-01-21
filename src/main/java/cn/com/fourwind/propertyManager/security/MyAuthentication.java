@@ -25,6 +25,8 @@ public class MyAuthentication {
 	public void attemptAuthentication(String username, String password)
 			throws AuthenticationException, IOException, ServletException {
 			AdminUser user = userRepository.findByUsername(username);
+			String sss= passwordencodeer.encode(password);
+		   System.out.println(sss);
 	       if(user!=null) {
 		       String passwordfromweb= passwordencodeer.encode(password);
 		       if(passwordencodeer.matches(username, passwordfromweb)) {

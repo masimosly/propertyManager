@@ -5,9 +5,8 @@ import java.util.Date;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document
+//@Document
 public class Notice {
 	@Id
 	@GeneratedValue
